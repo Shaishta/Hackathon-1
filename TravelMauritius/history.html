@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>History</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="history.css">
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <strong>
+            <h3>TravelMauritius</h3>
+          </strong>
+        </a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="trip.html">Trip Planner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-danger " href="index.html" role="button">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <article class="">
+
+    <div class="bg">
+      <video id="sea" autoplay loop muted>
+        <source src="Pirate Ships in Lightning Rain Storm Screensaver Animation Loop_Full-HD.mp4" type="video/mp4">
+      </video>
+      <!-- <img class="map" src="13ee78a7da75b7e180830a1966e7c919.jpg" width="450px" alt=""> -->
+
+    </div>
+    <div class="box">
+
+      <img class="map" src="13ee78a7da75b7e180830a1966e7c919.jpg" width="450px" alt="">
+      <span class="vertical">Click On Location Pins for more info.</span>
+      <span class="title">
+        <h5>Historical Sites</h5>
+      </span>
+      <section class="loc1">
+        <div class="popup" onclick="myFunction1()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup1">
+            <h4>Le Morne Brabant</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+      </section>
+      <section class="loc2">
+        <div class="popup" onclick="myFunction2()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup2">
+            <h4>Aapravasi Ghat</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc3">
+        <div class="popup" onclick="myFunction3()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup3">
+            <h4>Maison Eureka</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc4">
+        <div class="popup" onclick="myFunction4()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup4">
+            <h4>Arsenal Bay</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc5">
+        <div class="popup" onclick="myFunction5()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup5">
+            <h4>Mauritius Photography Musuem</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc6">
+        <div class="popup" onclick="myFunction6()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup6">
+            <h4>Route Du thé</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc7">
+        <div class="popup" onclick="myFunction7()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup7">
+            <h4>L'Adventure Du Sucre</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc8">
+        <div class="popup" onclick="myFunction8()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup8">
+            <h4>Martello Tower</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc9">
+        <div class="popup" onclick="myFunction9()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup9">
+            <h4>Blue penny musuem</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc10">
+        <div class="popup" onclick="myFunction10()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup10">
+            <h4>Citadel Fort</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc11">
+        <div class="popup" onclick="myFunction11()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup11">
+            <h4>Matthew Flinders Monument</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc12">
+        <div class="popup" onclick="myFunction12()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup12">
+            <h4>Albion Lighthouse</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc14">
+        <div class="popup" onclick="myFunction14()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup14">
+            <h4>Chateau de Labourdonnais</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc15">
+        <div class="popup" onclick="myFunction15()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup15">
+            <h4>Paul & Virginnie Monument</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+      <section class="loc16">
+        <div class="popup" onclick="myFunction16()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup16">
+            <h4>Dutch 1st Landing</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+      </section>
+      <section class="loc17">
+        <div class="popup" onclick="myFunction17()">
+          <img src="location.png" width="25px" height="25px" alt="">
+          <div class="popuptext" id="myPopup17">
+            <h4>Mahebourg Historical Naval Musuem</h4>
+            <button type="button" class="btn btn-info btn-sm">Read More</button>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </article>
+  <div class="his">
+
+
+    <div class="card text-center">
+      <div class="card-header">
+        Our History
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">About Mauritius</h5>
+        <p class="card-text">Mauritius was first visited by Arabs sailors around the ninth century but
+          did not settle in the island. The Portuguese explored the island more
+          officially around 1511, yet they did not settle too, and named the island
+          Cirné as well as the group of islands: Mauritius, Rodrigues and Réunion
+          “the Mascarenes” after Don Pedro Mascarenhas, a Portuguese sailor.<br><br>
+          The Dutch arrived and settled on the island as from 1598. The island was
+          given the name of ‘Mauritius’ in honour of the ruler of the Netherlands,
+          Prince Maurice Van Nassau. They brought slaves from Madagascar to
+          work the land. The Dutch introduced sugarcane, tobacco, wild boars,
+          deer, monkeys and some crops. They failed to establish a successful
+          colony and the Dutch subsequently abandoned the island in 1710. Five
+          years later, in 1715, the French who already possessed Bourbon Island
+          (Ile de la Réunion) took possession of Mauritius and named it “Ile de
+          France”. They developed the island as from 1721 and first inhabitants
+          came from Bourbon Island. Bertrand François Mahé de Labourdonnais, a
+          captain came from St Malo, and developed the town and harbour of Port
+          Louis. Labourdonnais, governor of île de France and Les Mascareignes
+          brought more slaves and artisans to build roads and bridges. He turned
+          the harbour into a naval base, constructed the Government House,
+          Chateau de Mon Plaisir found in Pamplemousses Gardens and the Line
+          Barracks in Port Louis.<br><br>
+          There were frequent wars at sea between the French and British; the
+          latter wanted to take over the island from the French. In August 1810, in
+          the famous battle of Grand Port, the British troops were defeated. The
+          British came back in December 1810 and took over the island which they
+          renamed Mauritius. Despite restoring the name to ‘Mauritius’, the British
+          unusually allowed the customs, laws and language to remain French.
+          In February 1835, slavery was abolished and in order to develop the
+          island hundreds of thousands indentured labourers were brought from
+          India. The area under sugar cane plantation and the production of sugar
+          grew rapidly. The island became the most important sugar producer for
+          the British Crown.<br><br>
+          In March 1968 the country became independent within the
+          commonwealth and, in 1992 it became a republic. Since independence,
+          much progress has been made in all sectors and Mauritius has entered
+          the 21st century as a successful Small Island Developing State.
+          The mismatch of cultures and peoples that make up the history of
+          Mauritius is reflected across other dimensions of the island such as
+          language, culture and food. Although the official language is English,
+          much of the local population converses in Creole-French based but a mix
+          of multiple languages. The people, too, are a combination of ethnicities,
+          with the majority being Indo-Pakistani, mostly descendants of the
+          indentured labourers. About a fourth is Creole (a mix of French and
+          African) and there is also a small percentage of Chinese and Franco-
+          Mauritian descendants. The tide of diverse explorers who have graced
+          the shores in the past is also evident in the food; Asian, Indian and
+          European specialities can all be found in the local cuisine – ‘less a
+          melting pot than a wonderfully aromatic cooking pot’. The culture of the
+          island is perhaps best described in the tradition of table d’hôte, where a
+          family table is covered with signature dishes and open to all for sharing.
+          Matching the colour and splendour of the food, and something not to be
+          missed, is the lively popular folk dance, for which Mauritians are
+          renowned: séga. The island is similarly famed for talented poets and
+          novelists as well as a flourishing art scene where representation and
+          abstract painting is particularly popular.<br><br>
+          If you’re looking for outdoor adventure and activities, this small island
+          has plenty to offer. The Northern region from Turtle Bay to Cap
+          Malheureux is very popular for motorised water sports and island
+          hopping. Also in the North is the Seewoosagur Ramgoolam Botanical
+          gardens, named after the first prime minister of independent Mauritius,
+          and displaying an otherworldly natural elegance. The gardens are most
+          famous for the giant Victoria amazonica water lilies which can stretch to
+          2m wide and are best seen during the summer months. Initially started
+          as a vegetable patch, it also boasts towering palms and an array of
+          colourful birds and small wildlife.<br><br>
+          Boat in Mauritius Coral Reef Marine Conservation | Volunteer Mauritius |
+          Working AbroadThe west coast is ideal for water activities like surfing,
+          snorkeling and kitesurfing among other things, specifically along the
+          beautiful beaches of Flic en Flac, Tamarin and Le Morne. Further inland
+          you’ll find the Valleé de Ferney, in the central part of the island, which is
+          home to one of the world’s most endangered raptors: the Mauritius
+          kestrel. It also has a beautiful old sugarcane factory, a 400-year-old
+          forest and some impeccable hiking trails (with the bonus of a lovely local
+          restaurant nearby!). In the south-west, found in Chamarel, is an
+          entrancing display of different colours of sand called The Seven Coloured
+          Earths.<br><br>
+          Aside from Eden-esque landscapes and outdoor activities, Mauritius also
+          allows visitors the opportunity to step back in time in a most magnificent
+          fashion. Maison Eureka, is a wonderful example of this. Located in the
+          north-west, a mere 10 minutes from Port Louis by car, it is a perfectly
+          preserved creole mansion built in the 1830s and adorned with antique
+          furniture and manicured grounds. In Port Louis itself is also the famed
+          Blue Penny Museum and the sunshine-coloured Natural History Museum.
+          The former of the two is dedicated to the world-famous Mauritian one-
+          penny and two-pence stamps of 1847. In fact, central to the museum is a
+          collection showing two of the world’s rarest stamps. Though it also
+          boasts other interesting artefacts like ancient maps and art and also
+          documents the history of exploration and colonial periods of the island.
+          The latter also contains some fascinating early maps of the island and
+          paintings of Mauritius’ original fauna – including, of course, the Dodo. In
+          addition, it holds incredible treasures from old Spanish and British
+          shipwrecks. Aapravasi Ghat, the ruins of an immigration depot from the
+          period of indentured labourers under the British as well as Le Morne
+          Cultural Landscape, a refuge for runaway slaves in the 18th and 19th
+          centuries have both been designated UNESCO World Heritage Sites.
+          They, too, are worth a visit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-basic">
+    <footer>
+      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">Services</a></li>
+        <li class="list-inline-item"><a href="#">About</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">TravelMauritius © 2021</p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script>
+    // le morne
+    function myFunction1() {
+      var popup = document.getElementById("myPopup1");
+      popup.classList.toggle("show");
+    }
+    // apravasi ghat
+    function myFunction2() {
+      var popup = document.getElementById("myPopup2");
+      popup.classList.toggle("show");
+    }
+    // eureka
+    function myFunction3() {
+      var popup = document.getElementById("myPopup3");
+      popup.classList.toggle("show");
+    }
+    // Arsenal Bay
+    function myFunction4() {
+      var popup = document.getElementById("myPopup4");
+      popup.classList.toggle("show");
+    }
+    // Photography musuem
+    function myFunction5() {
+      var popup = document.getElementById("myPopup5");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction6() {
+      var popup = document.getElementById("myPopup6");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction7() {
+      var popup = document.getElementById("myPopup7");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction8() {
+      var popup = document.getElementById("myPopup8");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction9() {
+      var popup = document.getElementById("myPopup9");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction10() {
+      var popup = document.getElementById("myPopup10");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction10() {
+      var popup = document.getElementById("myPopup10");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction11() {
+      var popup = document.getElementById("myPopup11");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction12() {
+      var popup = document.getElementById("myPopup12");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction13() {
+      var popup = document.getElementById("myPopup13");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction14() {
+      var popup = document.getElementById("myPopup14");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction15() {
+      var popup = document.getElementById("myPopup15");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction16() {
+      var popup = document.getElementById("myPopup16");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction17() {
+      var popup = document.getElementById("myPopup17");
+      popup.classList.toggle("show");
+    }
+    // Route Du The
+    function myFunction18() {
+      var popup = document.getElementById("myPopup18");
+      popup.classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>

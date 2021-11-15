@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>North Region</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			background-image: url("https://images.unsplash.com/photo-1533206245052-c49ebd963814?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			/* background-position: center; */
+		}
+
+		h3 {
+			color: steelblue;
+		}
+
+		* {
+			box-sizing: border-box;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.header_container {
+			width: 50%;
+			margin: auto;
+			padding: 20px;
+			text-align: center;
+			font-family: 'Roboto', sans-serif;
+			font-size: 28px;
+
+		}
+
+
+
+		h4 {
+			text-align: center;
+		}
+
+		@media (max-width: 700px) {
+
+			.row,
+			.navbar,
+			.card {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.header_container {
+				font-size: 12px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<strong>
+					<h3>TravelMauritius</h3>
+				</strong>
+			</a>
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link" href="trip.html">Trip Planner</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" aria-current="page" href="#">History</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="blog.html">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="btn btn-outline-danger " href="index.html" role="button">Sign Out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- breadcrumbs -->
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="home.html">Home</a></li>
+			<li class="breadcrumb-item"><a href="trip.html">Trip Planner</a></li>
+			<li class="breadcrumb-item active" aria-current="page">North</li>
+		</ol>
+	</nav>
+
+	<!-- header of page -->
+
+	<div class="header_container">
+		<h2><strong>North</strong> </h2>
+		<hr>
+		<p>The capital city of Mauritius, Port-Louis is found in the northern part of the island. It is a must-visit city.</p>
+	</div>
+	<!-- add image of Mauritius northern part -->
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-body" id="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59925.39231665125!2d57.47102663290756!3d-20.161688451644874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c504941d601ef%3A0xfdc5186c91bdbb3d!2sPort%20Louis!5e0!3m2!1sen!2smu!4v1636568589025!5m2!1sen!2smu"
+						width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-body">
+					<a class="weatherwidget-io" href="https://forecast7.com/en/n20d1657d50/port-louis/" data-label_1="PORT LOUIS" data-label_2="WEATHER" data-theme="original">PORT LOUIS WEATHER</a>
+					<script>
+						! function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0];
+							if (!d.getElementById(id)) {
+								js = d.createElement(s);
+								js.id = id;
+								js.src = 'https://weatherwidget.io/js/widget.min.js';
+								fjs.parentNode.insertBefore(js, fjs);
+							}
+						}(document, 'script', 'weatherwidget-io-js');
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  gallery section starts  -->
+	<div class="header_container">
+		<h2><strong>THE TOP 5</strong> </h2>
+		<p>
+			<hr>
+		</p>
+	</div>
+	<div class="row row-cols-1 row-cols-sm-3 g-4">
+		<div class="col">
+			<div class="card">
+				<img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/51/8f/3e/le-caudan-waterfront.jpg" class="card-img-top" alt="Caudan">
+				<div class="card-body">
+					<h5 class="card-title">Caudan Waterfront</h5>
+					<p class="card-text">A Holistic Approach. Le Caudan Waterfront in Port-Louis is a unique commercial concept in Mauritius. An experience in itself, Le Caudan Waterfront offers a unique shopping, leisure and work hub, in the capital, on the
+						water’s edge.</p>
+					<a class="btn btn-primary" href="https://caudan.com/" role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="http://farm9.staticflickr.com/8367/8368466072_9c1b35b8e2_o.jpg" class="card-img-top" alt="botanical">
+				<div class="card-body">
+					<h5 class="card-title">Sir Seewoosagur Ramgoolam Botanical Garden</h5>
+					<p class="card-text"> Pamplemousses Botanic Garden, is a popular tourist attraction in Pamplemousses, near Port Louis, Mauritius, and the oldest botanical garden in the Southern Hemisphere.</p>
+					<a class="btn btn-primary" href="https://ssrbg.govmu.org/SitePages/Index.aspx" role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="https://media.cool-cities.com/grand_baie_la_croisette137_pr_r_mob.jpg?h=730" class="card-img-top" alt="lacroisette">
+				<div class="card-body">
+					<h5 class="card-title">LA CROISETTE</h5>
+					<p class="card-text">Imagine a place where pleasure meets the practical: Operational since Oct 2012, this dream place became a reality and could be found at La Croisette.</p>
+					<a class="btn btn-primary" href="http://www.gblc.mu/" role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="https://thisweeknews.info/wp-content/uploads/2017/09/Odysseo.jpg" class="card-img-top" alt="odysseo">
+				<div class="card-body">
+					<h5 class="card-title">Odysseo</h5>
+					<p class="card-text">Welcome to the largest oceanarium in the Mascarene Archipelago and the first of its kind in Mauritius. Over and above the richness of its onsite aquariums, Odysseo is a place where you can have fun while learning and
+						educating yourself.</p>
+					<a class="btn btn-primary" href="https://www.odysseomauritius.com/" role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/112000/112459-Trou-Aux-Biches.jpg" class="card-img-top" alt="trouauxbiches">
+			<div class="card-body">
+				<h5 class="card-title">Trou-aux-Biches</h5>
+				<p class="card-text">Trou-aux-Biches is a small town with a public beach on the northern coast of Mauritius in the district of Pamplemousses. According to the World Travel group, the beach is one of the most beautiful on the island. </p>
+				<a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Trou-aux-Biches" role="button">More Info</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- gallery section ends -->
+
+
+</body>
+
+</html>

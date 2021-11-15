@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>South Region</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			background-image: url("https://images.unsplash.com/photo-1533206245052-c49ebd963814?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			/* background-position: center; */
+		}
+
+		h3 {
+			color: steelblue;
+		}
+
+		* {
+			box-sizing: border-box;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.header_container {
+			width: 50%;
+			margin: auto;
+			padding: 20px;
+			text-align: center;
+			font-family: 'Dancing Script', cursive;
+			font-size: 28px;
+
+		}
+
+		h4 {
+			text-align: center;
+		}
+
+		@media (max-width: 700px) {
+
+			.row,
+			.navbar,
+			.card {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.header_container {
+				font-size: 12px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<strong>
+					<h3>TravelMauritius</h3>
+				</strong>
+			</a>
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link" href="trip.html">Trip Planner</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" aria-current="page" href="#">History</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="blog.html">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="btn btn-outline-danger " href="index.html" role="button">Sign Out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- breadcrumbs -->
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="home.html">Home</a></li>
+			<li class="breadcrumb-item"><a href="trip.html">Trip Planner</a></li>
+			<li class="breadcrumb-item active" aria-current="page">South</li>
+		</ol>
+	</nav>
+
+	<!-- header of page -->
+	<div class="header_container">
+		<h2><strong>South</strong> </h2>
+		<hr>
+		<p>The southern region of Mauritius, also known as the Wild South, is the most preserved part of the island; it stands out from the other regions with its incredible cliffs and impressive waves, creating a feeling of closeness to nature.</p>
+	</div>
+	<!-- add image of Mauritius southern part -->
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-body">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119619.00924153125!2d57.42405461554699!3d-20.461330428853824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c65d77a258659%3A0xc9250704aa617677!2sSavanne%20District!5e0!3m2!1sen!2smu!4v1636623112258!5m2!1sen!2smu"
+						width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-body">
+					<a class="weatherwidget-io" href="https://forecast7.com/en/n20d5257d53/souillac/" data-label_1="SOUILLAC" data-label_2="WEATHER" data-theme="original">SOUILLAC WEATHER</a>
+					<script>
+						! function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0];
+							if (!d.getElementById(id)) {
+								js = d.createElement(s);
+								js.id = id;
+								js.src = 'https://weatherwidget.io/js/widget.min.js';
+								fjs.parentNode.insertBefore(js, fjs);
+							}
+						}(document, 'script', 'weatherwidget-io-js');
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  gallery section starts  -->
+	<div class="header_container">
+		<h2><strong>THE TOP 5</strong> </h2>
+		<p>
+			<hr>
+		</p>
+	</div>
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		<div class="col">
+			<div class="card">
+				<img src="https://i.pinimg.com/originals/bd/5c/b2/bd5cb2ccebfd7139f3eeb8912bdba3f7.jpg" style="width: 100%;" class="card-img-top" alt="lavanille">
+				<div class="card-body">
+					<h5 class="card-title">La Vanille Nature Park</h5>
+					<p class="card-text">Our team will be happy to welcome you to this “Magical Place” where nature and humans can meet in a truly Mauritian way...</p><a class="btn btn-primary" href="http://www.lavanille-reserve.com/index.php/en/park.html"
+						role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="https://www.villa-vie.com/photo/img/Mauritius/Discovery_Tour/From_the_south_to_the_east/naval_museum_of_mah%C3%A9bourg.jpg?time=1541583727737" style="width: 100%;" class="card-img-top" alt="nationalmuseum">
+				<div class="card-body">
+					<h5 class="card-title">Mahebourg Historical Naval Museum</h5>
+					<p class="card-text">The National History Museum (Naval Museum) will take you into a historical journey of the island dating back to the 18th century.</p><a class="btn btn-primary"
+						href="https://mauritiusattractions.com/mahebourg-historical-naval-museum-p-1318.html" role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="https://wanderlusterercoza.files.wordpress.com/2017/05/img_5845.jpg" style="width: 100%;" class="card-img-top" alt="curious">
+				<div class="card-body">
+					<h5 class="card-title">Curious Corner of Chamarel</h5>
+					<p class="card-text">The Curious Corner Ames Room is a family favourite photo opportunity.</p><a class="btn btn-primary" href="https://www.curiouscornerofchamarel.com/" role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="https://www.holidify.com/images/cmsuploads/compressed/stvhvh_20180904171753.jpg" style="width: 100%;" class="card-img-top" alt="fort">
+				<div class="card-body">
+					<h5 class="card-title">Frederik Hendrik Museum & Vieux Grand Port Historic Site</h5>
+					<p class="card-text">Excavated ruins of an old Dutch fort called Frederik Hendrik led to the discovery of an entire historic site which comprises the Vieux Grand-Port.</p><a class="btn btn-primary"
+						href="https://mauritiusmuseums.govmu.org/mauritiusmuseums/?page_id=1822" role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://i.pinimg.com/originals/6a/03/6d/6a036dd26858524fa55d05c5be1b03a5.jpg" style="width: 100%;" class="card-img-top" alt="grisgris">
+			<div class="card-body">
+				<h5 class="card-title">Gris Gris</h5>
+				<p class="card-text">Gris Gris is more than a viewing platform. A short walking trail that begins behind the car park leads to the Weeping Rock and The Blowhole.</p><a class="btn btn-primary"
+					href="https://www.mauritiusviews.com/attraction/gris-gris/" role="button">More Info</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- gallery section ends -->
+	<script>
+
+	</script>
+
+
+
+</body>
+
+</html>

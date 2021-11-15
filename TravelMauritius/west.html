@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>West Region</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			background-image: url("https://images.unsplash.com/photo-1533206245052-c49ebd963814?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			/* background-position: center; */
+		}
+
+		h3 {
+			color: steelblue;
+		}
+
+		* {
+			box-sizing: border-box;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.header_container {
+			width: 50%;
+			margin: auto;
+			padding: 20px;
+			text-align: center;
+			font-family: 'Dancing Script', cursive;
+			font-size: 28px;
+
+		}
+
+		h4 {
+			text-align: center;
+		}
+
+		@media (max-width: 700px) {
+
+			.row,
+			.navbar,
+			.card {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.header_container {
+				font-size: 12px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<strong>
+					<h3>TravelMauritius</h3>
+				</strong>
+			</a>
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link" href="trip.html">Trip Planner</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" aria-current="page" href="#">History</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="blog.html">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="btn btn-outline-danger " href="index.html" role="button">Sign Out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- breadcrumbs -->
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="home.html">Home</a></li>
+			<li class="breadcrumb-item"><a href="trip.html">Trip Planner</a></li>
+			<li class="breadcrumb-item active" aria-current="page">West</li>
+		</ol>
+	</nav>
+
+	<!-- header of page -->
+	<div class="header_container">
+		<h2><strong>West</strong> </h2>
+		<hr>
+		<p>In the west coast of Mauritius you will be transported to a spectacular coastline, amazing mountain peaks, and sugar cane fields. The weather on this side of the island is warmer and more humid than anywhere else in Mauritius. </p>
+	</div>
+	<!-- add image of Mauritius western part -->
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-body">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239446.9772796052!2d57.249019940938524!3d-20.32678191553478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c423e443dd695%3A0xc1e6bfb2e928844!2sRivi%C3%A8re%20Noire%20District!5e0!3m2!1sen!2smu!4v1636623421518!5m2!1sen!2smu"
+						width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-body">
+					<a class="weatherwidget-io" href="https://forecast7.com/en/n20d2857d37/flic-en-flac/" data-label_1="FLIC EN FLAC" data-label_2="WEATHER" data-theme="original">FLIC EN FLAC WEATHER</a>
+					<script>
+						! function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0];
+							if (!d.getElementById(id)) {
+								js = d.createElement(s);
+								js.id = id;
+								js.src = 'https://weatherwidget.io/js/widget.min.js';
+								fjs.parentNode.insertBefore(js, fjs);
+							}
+						}(document, 'script', 'weatherwidget-io-js');
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  gallery section starts  -->
+	<div class="header_container">
+		<h2><strong>THE TOP 5</strong> </h2>
+		<p>
+			<hr>
+		</p>
+	</div>
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		<div class="col">
+			<div class="card">
+				<img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2017/02/giraffe.jpg" style="width: 100%;" class="card-img-top" alt="casela">
+				<div class="card-body">
+					<h5 class="card-title">Casela Nature Parks</h5>
+					<p class="card-text">Casela is one of the most popular leisure and attraction parks in Mauritius offering a variety of fun and thrilling activities to individuals, families and corporates.</p><a class="btn btn-primary"
+						href="https://caselaparks.com/" role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="https://cdn.getyourguide.com/img/location/5c40ddfeaa602.jpeg/88.jpg" style="width: 100%;" class="card-img-top" alt="morne">
+				<div class="card-body">
+					<h5 class="card-title">Le Morne Brabant</h5>
+					<p class="card-text"> Le Morne highlights the historical significance of slavery and indenture, two labour systems that shaped modern Mauritius.</p><a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Le_Morne_Brabant"
+						role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Plage_%C3%A0_Flic-en-Flac.jpg" style="width: 100%;" class="card-img-top" alt="beach">
+				<div class="card-body">
+					<h5 class="card-title">Flic-en-Flac</h5>
+					<p class="card-text">This public beach attracts local families, tourists and visitors throughout the year.</p><a class="btn btn-primary" href="https://mauritiusattractions.com/flic-en-flac-mauritius-i-74.html" role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/08/shutterstock_1186067344.jpg" style="width: 100%;" class="card-img-top" alt="gorges">
+				<div class="card-body">
+					<h5 class="card-title">Black River Gorges National Park</h5>
+					<p class="card-text">The Park is managed mainly for the conservation of endemic flora and fauna, dissemination of and creation of public awareness, education and the provision of leisure to both local and foreign visitors.</p><a
+						class="btn btn-primary" href="https://npcs.govmu.org/Pages/National%20Parks/Black-River-Gorges-National-Parks.aspx" role="button">More Info</a>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://youimg1.tripcdn.com/target/10031f000001gs1fl808F.jpg?proc=source%2Ftrip" style="width: 100%;" class="card-img-top" alt="chamarel">
+			<div class="card-body">
+				<h5 class="card-title">Chamarel’s Seven Coloured Earth</h5>
+				<p class="card-text">One of Mauritius’ most iconic attractions, the island’s original and premier geopark provides a unique experience for geology enthusiasts, nature lovers and those who simply want to understand more about this rare and
+					impressive phenomenon.</p><a class="btn btn-primary" href="https://www.chamarel7colouredearth.com/" role="button">More Info</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- gallery section ends -->
+	<script>
+
+	</script>
+
+
+
+</body>
+
+</html>
